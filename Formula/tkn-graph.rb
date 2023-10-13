@@ -5,13 +5,13 @@
 class TknGraph < Formula
   desc "Tekton CLI - The command line interface for Pipeline, PipelineRun presentation in Graph"
   homepage "https://github.com/sergk/tkn-graph"
-  version "0.6.0"
+  version "0.6.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Sergk/tkn-graph/releases/download/v0.6.0/tkn-graph_0.6.0_Darwin_aarch64.tar.gz"
-      sha256 "c0291e200f00af6322499fb3e74f088a0b4d2e5b1945dc03f995d0ca5bc61e43"
+      url "https://github.com/Sergk/tkn-graph/releases/download/v0.6.1/tkn-graph_0.6.1_Darwin_aarch64.tar.gz"
+      sha256 "ae848389170001d1af76c430f81a4fb13805eab40b838b1c2ed725fc4aa74b35"
 
       def install
         bin.install_symlink "tkn" => "kubectl-tkn-graph"
@@ -24,8 +24,8 @@ class TknGraph < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Sergk/tkn-graph/releases/download/v0.6.0/tkn-graph_0.6.0_Darwin_x86_64.tar.gz"
-      sha256 "62e9ba7de10bcbda5befc30bc9408a5d071cd2ae573560f35247edff5e94913a"
+      url "https://github.com/Sergk/tkn-graph/releases/download/v0.6.1/tkn-graph_0.6.1_Darwin_x86_64.tar.gz"
+      sha256 "ac6edf41b0d79ba64efc56c5f42b55b7987196bb60b546de007c00c3c0b1e573"
 
       def install
         bin.install_symlink "tkn" => "kubectl-tkn-graph"
@@ -41,8 +41,8 @@ class TknGraph < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Sergk/tkn-graph/releases/download/v0.6.0/tkn-graph_0.6.0_Linux_aarch64.tar.gz"
-      sha256 "ada936344d0b7597e76b8e7c8842eba423d3793ab2b4f6e83513104c1938bfc3"
+      url "https://github.com/Sergk/tkn-graph/releases/download/v0.6.1/tkn-graph_0.6.1_Linux_aarch64.tar.gz"
+      sha256 "437eedf7c7e0e331c9fd93350351e006aaddaff4ad37740be6246a696a5ec7aa"
 
       def install
         bin.install_symlink "tkn" => "kubectl-tkn-graph"
@@ -55,8 +55,8 @@ class TknGraph < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Sergk/tkn-graph/releases/download/v0.6.0/tkn-graph_0.6.0_Linux_x86_64.tar.gz"
-      sha256 "2f3ae4311000ef79eb14c277176ce97f754dd0e6069b58766bc56cf19694d3ac"
+      url "https://github.com/Sergk/tkn-graph/releases/download/v0.6.1/tkn-graph_0.6.1_Linux_x86_64.tar.gz"
+      sha256 "99df628ea31094b25f8ab32fc4a8a0b8c409b7a1da9c47a49dcd482370df9ff7"
 
       def install
         bin.install_symlink "tkn" => "kubectl-tkn-graph"
